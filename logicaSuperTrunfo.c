@@ -6,6 +6,48 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
+    int opcao;
+menu1:
+    Printf("~~~## Bem vindo ao Super trunfo Paises ##~~~" \n);
+        printf("1. Iniciar o game \n");
+        printf("2. Sobre o game \n");
+        printf("3. Sair do game \n");
+        scanff("%d", &opcao);
+        switch (opcao){
+        case 1:
+        printf("aqui o jogo acontece...... \n");
+        break;
+    
+        case 2:
+            printf("O jogo se baseia numa competicao entre cartas de cidades \n");
+            printf("voce escolhe um pais e ganha uma carta aleatoria de uma cidade \n");
+            printf("na sequencia voce escolhe um atributo e compara contra o computador \n");
+            printf("o valor escolhido de maior valor ganha a partida \n");
+            printf("Escolha uma opcao \n");
+            printf("1. Voltar ao menu anterior \n");
+            printf("2. Sair do game /n");
+            scanf("%d", &opcao);
+             Switch (opcao)
+                case 1: goto menu1;
+            break;
+                   case 2: SDL_Quit();
+            break;
+               default:
+               printf("opcao invalida \n");
+                   }
+                
+            break;
+    case 3:SDL_Quit();
+            break;
+        default: 
+        printf("opcao invalida \n");
+}
+
+    return 0;
+            
+        
+        
+
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
 
