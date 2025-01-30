@@ -8,11 +8,11 @@
 int main() {
     int opcao;
 menu1:
-    Printf("~~~## Bem vindo ao Super trunfo Paises ##~~~" \n);
+        printf("~~~## Bem vindo ao Super trunfo Paises ##~~~ \n");
         printf("1. Iniciar o game \n");
         printf("2. Sobre o game \n");
         printf("3. Sair do game \n");
-        scanff("%d", &opcao);
+        scanf("%d", &opcao);
         switch (opcao){
         case 1:
         printf("aqui o jogo acontece...... \n");
@@ -27,23 +27,26 @@ menu1:
             printf("1. Voltar ao menu anterior \n");
             printf("2. Sair do game /n");
             scanf("%d", &opcao);
-             Switch (opcao)
-                case 1: goto menu1;
+                             
+                
             break;
-                   case 2: SDL_Quit();
+            case 3: exit();
+                break;
+        default: 
+        printf("opcao invalida \n");
+}
+    switch (opcao){
+    case 1: goto menu1;
+            break;
+            case 2: exit();
             break;
                default:
                printf("opcao invalida \n");
                    }
-                
-            break;
-    case 3:SDL_Quit();
-            break;
-        default: 
-        printf("opcao invalida \n");
-}
 
     return 0;
+}
+
             
         
         
